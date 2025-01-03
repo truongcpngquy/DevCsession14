@@ -13,7 +13,6 @@ int main() {
             n++;
         }
     }
-
     printf("ki tu %c xuat hien %d lan trong chuoi\n", ch, n);
 
     return 0;

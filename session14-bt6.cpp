@@ -3,23 +3,14 @@
 #define MAX 100 
 
 int main(){
-	char str[MAX]="hello word";
-	int i=0,n=0,m=0;
-	while(str[i]!=NULL){
-		if(str[i] == ' '){
-			i++; 
-		}else if(m==0){
-			n++;
-			m=1;
-			i++; 
-		}else{
-			i++; 
+	char str[MAX]="TruongCongQuy0102006";
+	int chuCai=0; 
+	for(int i=0;i<strlen(str);i++){
+		if((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z')){
+		chuCai++;
 		}
-		if(str[i] == ' '){
-			m=0; 
 	}
-}
-	printf("So tu trong chuoi la: %d",n);
+	printf("So ki tu la chu cai trong chuoi la: %d",chuCai);
 	
 	return 0; 
-}
+} 
